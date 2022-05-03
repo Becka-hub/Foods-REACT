@@ -1,0 +1,25 @@
+form input{
+    border-radius: 0!important;
+  }
+  form input:focus{
+      box-shadow: none!important;
+  }
+  form .btn-dark{
+      border-radius: 0!important;
+  }
+  form .btn-dark:focus{
+      box-shadow: none!important;
+  }
+  form .btn_save{
+      background-color: #da0037;
+      color: white;
+      border-radius: 0!important;
+      transition: 0.5s ease-in-out;
+  }
+  form .btn_save:focus{
+      box-shadow: none!important;
+  }
+  form .btn_save:hover{
+      transform: scale(1.1);
+      color: white;
+  }

@@ -1,0 +1,402 @@
+.Compte {
+    width: 100%;
+    padding: 20px;
+    height: 100vh;
+}
+
+.Compte .bloc_user {
+    padding: 20px;
+    background-color: #da0037;
+    border-radius: 8px;
+}
+
+.Compte .bloc_user .image_user {
+    height: 120px;
+    width: 125px;
+}
+
+.Compte .bloc_user .image_user img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 2px 12px white;
+    border: 3px solid white;
+}
+
+.Compte .bloc_user .fa-cutlery {
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+.Compte .bloc_user .description_user {
+    margin-top: 20px;
+}
+
+.Compte .bloc_user .description_user h5 {
+    color: white;
+}
+
+.Compte .bloc_user .retour {
+    display: flex;
+    text-decoration: none !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Compte .bloc_user .retour i {
+    font-size: 25px;
+    color: white;
+    margin-right: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.Compte .bloc_user .retour h5 {
+    margin-top: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+.Compte .bloc_publication {
+    width: 100%;
+    height: 96vh;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Compte .bloc_publication .header_publication h2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #da0037;
+    letter-spacing: 1.5px;
+    font-size: 25px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.253);
+    font-weight: 700;
+}
+
+.Compte .bloc_publication .form_publication {
+    margin-top: 20px;
+}
+
+.Compte .bloc_publication .form_publication select {
+    border-bottom: 2px solid #da0037;
+
+}
+
+.Compte .bloc_publication .form_publication select:focus {
+    box-shadow: none !important;
+}
+
+.Compte .bloc_publication .form_publication input {
+    border-bottom: 2px solid #da0037;
+}
+
+.Compte .bloc_publication .form_publication .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: rgb(196, 196, 196);
+    border: 2px solid rgb(206, 206, 206);
+}
+
+.Compte .bloc_publication .form_publication .avatar i {
+    font-size: 50px;
+    color: white;
+}
+
+.Compte .bloc_publication .form_publication .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #da0037;
+}
+
+.Compte .bloc_publication .form_publication .camera i {
+    font-size: 35px;
+    color: #da0037;
+    margin-top: 92px;
+    margin-left: -22px;
+}
+
+.Compte .bloc_publication .form_publication textarea {
+    border-bottom: 2px solid #da0037;
+}
+
+.Compte .bloc_publication .form_publication textarea:focus {
+    box-shadow: none !important;
+}
+
+.Compte .bloc_publication .form_publication button {
+    background-color: #da0037;
+    color: white;
+}
+
+.Compte .bloc_publication .form_publication button:focus {
+    box-shadow: none !important;
+}
+
+.Compte .bloc_publication .publication {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.Compte .bloc_publication .publication .card {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.253);
+    border: none !important;
+    margin-top: 10px;
+}
+
+.Compte .bloc_publication .publication .card .image_card {
+    width: 100%;
+    height: 200px;
+}
+
+.Compte .bloc_publication .publication .card .image_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Compte .bloc_publication .publication .card .card-body .header {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    position: absolute;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background-color: rgba(121, 121, 121, 0.411);
+    border-radius: 5px;
+    display: flex;
+}
+
+.Compte .bloc_publication .publication .card .card-body .header .fa-calendar {
+    margin-right: 15px;
+}
+
+.Compte .bloc_publication .publication .card .card-body .header .fa-trash-o {
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+.Compte .bloc_publication .publication .card .card-body .header .fa-trash-o:hover {
+    transform: scale(1.1);
+    color: #da0037;
+}
+
+.Compte .bloc_publication .publication .card .card-body .titre {
+    margin-top: -36px;
+
+}
+
+.Compte .bloc_publication .publication .card .card-body .titre h5 {
+    background-color: #da0037;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.Compte .bloc_publication .publication .card .card-body .ingredient i {
+    color: #da0037;
+    margin-right: 10px;
+}
+
+.Compte .bloc_publication .publication .card .card-body .action {
+    margin-top: 10px;
+}
+
+.Compte .bloc_publication .publication .card .card-body .action .jaime {
+    display: flex;
+}
+
+.Compte .bloc_publication .publication .card .card-body .action .jaime .btn_jadore {
+    background-color: white;
+    border: 1px solid #da0037;
+    color: #da0037;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+}
+
+.Compte .bloc_publication .publication .card .card-body .action .jaime .btn_jadore i {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.Compte .bloc_publication .publication .card .card-body .action .jaime .btn_jadore:focus {
+    box-shadow: none;
+}
+
+.Compte .bloc_publication .publication .card .card-body .action .jaime .btn_voir {
+    background-color: #da0037;
+    color: white;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.Compte .bloc_publication .publication .card .card-body .action .jaime .btn_voir:focus {
+    box-shadow: none !important;
+}
+
+.Compte .bloc_publication .publication .card .card-body .action .btn_commentaire {
+    background-color: #da0037;
+    color: white;
+    border-radius: 8px;
+
+}
+
+.Compte .bloc_publication .publication .card .card-body .action .btn_commentaire:focus {
+    box-shadow: none !important;
+}
+
+.Compte .bloc_publication .publication .card .card-body .action .btn_commentaire i {
+    margin-left: 5px;
+}
+
+.liste_jaime {
+    display: flex;
+    margin-top: 10px;
+}
+
+.liste_jaime i {
+    background-color: rgb(214, 214, 214);
+    padding: 8px;
+    color: #da0037;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.liste_jaime .image_user {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
+
+.liste_jaime .image_user img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #da0037;
+}
+
+.liste_jaime h5 {
+    margin-top: 11px;
+    margin-left: 10px;
+}
+
+.btn_fermer {
+    background-color: #da0037 !important;
+    color: #e5e5e5 !important;
+    border-radius: 0 !important;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.btn_fermer:focus {
+    box-shadow: none !important;
+}
+
+.titre_jaime {
+    background-color: #da0037;
+    padding-top: 5px;
+    padding-bottom: 2px !important;
+}
+
+.titre_jaime h4 {
+    color: white;
+}
+
+.scroll_jaime {
+    height: 400px;
+}
+
+
+@media (min-width: 480px) and (max-width: 575.98px) {
+    .liste_jaime i {
+        background-color: rgb(214, 214, 214);
+        padding: 5px;
+        color: #da0037;
+        border-radius: 50%;
+        font-size: 18px;
+    }
+
+}
+
+.liste_jaime .image_user {
+    height: 37px;
+    width: 35px;
+    margin-left: 10px;
+}
+
+.liste_jaime h5 {
+    margin-top: 11px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 479.98px) {
+    .Compte .bloc_publication {
+        height: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .Compte .bloc_user .description_user h5 {
+        color: white;
+        font-size: 15px !important;
+    }
+
+    .Compte .bloc_user .retour i {
+        font-size: 18px;
+
+    }
+
+    .Compte .bloc_user .retour h5 {
+
+        font-size: 15px;
+    }
+
+    .Compte .bloc_publication .header_publication {
+        margin-top: 10px;
+    }
+
+    .Compte .bloc_publication .header_publication h2 {
+        font-size: 20px;
+    }
+
+    .Compte .bloc_publication .publication {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+
+    .liste_jaime i {
+        display: none !important;
+    }
+
+    .liste_jaime .image_user {
+        height: 27px !important;
+        width: 25px !important;
+    }
+
+    .liste_jaime h5 {
+        margin-top: 6px !important;
+        margin-left: 5px !important;
+        font-size: 13px;
+    }
+}

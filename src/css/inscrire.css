@@ -1,0 +1,61 @@
+#fileInput{
+    display: none!important;
+}
+.avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: rgb(196, 196, 196);
+    border: 2px solid rgb(206, 206, 206);
+}
+.avatar i{
+font-size:50px;
+color: white;
+}
+.avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #da0037;
+}
+.camera i{
+    font-size: 25px;
+    color: #da0037;
+    margin-top: 60px;
+    margin-left: -22px;
+}
+
+form h2{
+    color: #da0037;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+form input{
+  border-radius: 0!important;
+}
+form input:focus{
+    box-shadow: none!important;
+}
+form .btn-dark{
+    border-radius: 0!important;
+}
+form .btn-dark:focus{
+    box-shadow: none!important;
+}
+form .btn_inscrie{
+    background-color: #da0037;
+    color: white;
+    border-radius: 0!important;
+    transition: 0.5s ease-in-out;
+}
+form .btn_inscrie:focus{
+    box-shadow: none!important;
+}
+form .btn_inscrie:hover{
+    transform: scale(1.1);
+    color: white;
+}

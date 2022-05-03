@@ -1,0 +1,150 @@
+.Food{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Food .header{
+    height: 80px;
+    width: 100%;
+    background-color: #da0037;
+    box-shadow: 0px 2px 5px #da0037;
+}
+.Food .header .image_header{
+    width: 100%;
+    height: 100%;
+}
+.Food .header .image_header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Food .header .header_titre{
+    margin-top: -80px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  backdrop-filter:blur(4px);
+  background-color: rgba(121, 121, 121, 0.185);
+  height: 80px;
+  
+}
+.Food .header .header_titre h2{
+color: white;
+letter-spacing: 1.5px;
+font-weight: 700;
+margin-top: 15px;
+}
+
+.Food .bloc_produit {
+    margin-top: 40px;
+}
+.Food .bloc_produit .card{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.253);
+    border: none!important;
+    transition: 0.5s ease;
+}
+.Food .bloc_produit .card:hover{
+    transform: translateY(-15px);
+}
+.Food .bloc_produit .card .card_image{
+    width: 100%;
+    height: 180px;
+}
+.Food .bloc_produit .card .card_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 2px 5px #da0037;
+}
+.Food .bloc_produit .card h5{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #da0037;
+    margin-top: -33px;
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.Food .bloc_produit .card p{
+    width:100%;
+    overflow:hidden;
+    line-height: 2rem;
+    max-height: 8rem;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+}
+.Food .bloc_produit .card button{
+    background-color:white ;
+    color: #da0037;
+    transition: 0.5s ease;
+    border-radius: 0!important;
+    border: 1px solid #da0037;
+}
+.Food .bloc_produit .card button:hover{
+    background-color:#da0037;
+    color: white;
+}
+.Food .bloc_produit .card button:focus{
+    box-shadow: none!important;
+}
+.Food .bloc_produit .retour{
+    display: flex;
+    margin-top: 25px;
+    text-decoration: none!important;
+}
+.Food .bloc_produit .retour i{
+    margin-top: 6px;
+    margin-right: 10px;
+    font-size: 25px;
+    color: #da0037;
+    cursor: pointer;
+}
+.Food .bloc_produit .retour h5{
+    margin-top: 5px;
+    color: rgb(71, 71, 71);
+    cursor: pointer;
+}
+
+.modal_details .titre{
+    background-color: #da0037!important;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+}
+.modal_details .details_image{
+    width: 100%;
+    height: 300px;
+}
+.modal_details .details_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.modal_details  .details_description p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.modal_details .details_ingredient i{
+    color: #da0037;
+    font-size: 18px;
+}
+.modal_details button{
+background-color: #da0037;
+color: white;
+border-radius: 0!important;
+}
+.modal_details button:focus{
+box-shadow: none!important;
+}
+.modal_details button:hover{
+    color: white;
+}

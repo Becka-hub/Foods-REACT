@@ -1,0 +1,46 @@
+
+.logo{
+    width: 100%;
+    height: 260px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.Contact .bloc_contact{
+    background-color: #da0037;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+}
+.Contact .bloc_contact .avatar_contact{
+    width: 150px;
+    height: 150px;
+
+}
+.Contact .bloc_contact .avatar_contact img{
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+.Contact .bloc_contact h6{
+    color: white;
+}
+.Contact .bloc_contact .merci{
+    display: flex;
+    text-decoration: none!important;
+}
+.Contact .bloc_contact .merci i{
+    font-size: 25px;
+    color: white;
+    margin-right: 10px;
+    margin-top: 11px;
+    cursor: pointer;
+}
+.Contact .bloc_contact .merci h5{
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+}

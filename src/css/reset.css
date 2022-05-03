@@ -1,0 +1,61 @@
+.Reset{
+    width: 100%;
+    height: 100vh;
+    background-color: #da0037;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Reset .from_reset{
+    background-color: white!important;
+    padding: 20px;
+}
+.Reset .from_reset h3{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+.Reset .from_reset .form{
+    margin-top: 20px;
+}
+.Reset .from_reset .form button{
+    margin-top: 20px;
+    background-color: #da0037;
+    color: white;
+    border-radius: 0!important;
+    transition: 0.5s ease-in-out;
+}
+.Reset .from_reset .form button:focus{
+    box-shadow: none!important;
+    
+}
+.Reset .from_reset .form button:hover{
+    transform: scale(1.1);
+}
+.Reset .retour{
+    display: flex;
+    margin-top: 20px;
+    text-decoration: none!important;
+}
+.Reset .retour i{
+    margin-top: 6px;
+    margin-right: 10px;
+    font-size: 25px;
+    color: #da0037;
+    cursor: pointer;
+}
+.Reset .retour h5{
+    margin-top: 5px;
+    color: rgb(71, 71, 71);
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 479.98px) {
+    .Reset{
+ 
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

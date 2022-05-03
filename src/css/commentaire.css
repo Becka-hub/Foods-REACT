@@ -1,0 +1,100 @@
+.Commentaire{
+    width: 100%;
+    height: 100vh;
+    background-color: #da0037;
+    padding-bottom: 20px;
+}
+
+.Commentaire .bloc_input{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+.Commentaire .bloc_input h2{
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: rgb(51, 51, 51);
+}
+.Commentaire .bloc_input h2 i{
+    color: #da0037;
+    margin-right: 10px;
+}
+.Commentaire .bloc_input .input{
+    display: flex;
+}
+.Commentaire .bloc_input .input textarea:focus{
+  box-shadow: none!important;
+}
+.Commentaire .bloc_input .input button{
+    background-color: #da0037;
+    color: white;
+    margin-left: 10px;
+}
+.Commentaire .bloc_input .input button:focus{
+    box-shadow: none!important;
+}
+.Commentaire .bloc_commentaire{
+    margin-top: 20px;
+}
+.Commentaire .bloc_commentaire .single_commentaire{
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.Commentaire .bloc_commentaire .single_commentaire .commentaire_user .image_user{
+width: 37px;
+height: 35px;
+}
+.Commentaire .bloc_commentaire .single_commentaire .commentaire_user .image_user img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #da0037;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Commentaire .bloc_commentaire .single_commentaire .commentaire_user .user{
+    display: flex;
+}
+.Commentaire .bloc_commentaire .single_commentaire .commentaire_user .user h5{
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 8px;
+}
+.Commentaire .bloc_commentaire .single_commentaire .commentaire_user .suprimer i{
+    font-size: 25px;
+    color: #da0037;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.Commentaire .retour{
+    display: flex;margin-top: 20px;
+    text-decoration: none!important;
+}
+.Commentaire .retour i{
+    font-size: 25px;
+    color: white;
+    margin-right: 10px;
+    margin-top: 8px; 
+    cursor: pointer;
+
+}
+.Commentaire .retour h5{
+    margin-top: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 479.98px) {
+    .Commentaire{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: auto;
+    }
+}

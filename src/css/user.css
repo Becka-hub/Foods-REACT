@@ -1,0 +1,313 @@
+.User {
+    height: auto;
+    width: 100%;
+}
+
+.User .bloc_user {
+    margin-top: 20px;
+    display: flex;
+}
+
+.User .bloc_user .user {
+    width: 40%;
+    padding: 10px;
+    background-color: #da0037;
+}
+
+.User .bloc_user .user .image_user {
+    width: 125px;
+    height: 120px;
+    margin-top: 10px;
+}
+
+.User .bloc_user .user .image_user img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 2px 12px white;
+    object-fit: cover;
+}
+
+.User .bloc_user .user h5 {
+    margin-top: 20px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.User .bloc_user .user h6 {
+    margin-top: 15px;
+    color: white;
+}
+
+.User .bloc_user .logo {
+    padding: 10px;
+    width: 60%;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.253);
+}
+
+.User .bloc_user .logo .logo_food {
+    width: 350px;
+    margin-top: 10px;
+}
+
+.User .bloc_user .logo .logo_food img {
+    width: 100%;
+}
+
+.User .bloc_user .logo .retour {
+    display: flex;
+    text-decoration: none !important;
+}
+
+.User .bloc_user .logo .retour i {
+    border-radius: 50%;
+    color: #da0037;
+    margin-right: 5px;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.User .bloc_user .logo .retour h6 {
+    color: gray;
+}
+
+.publication {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.publication .card {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.253);
+    border: none !important;
+    margin-top: 10px;
+}
+
+.publication .card .image_card {
+    width: 100%;
+    height: 200px;
+}
+
+.publication .card .image_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.publication .card .card-body .header {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    position: absolute;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background-color: rgba(121, 121, 121, 0.411);
+    border-radius: 5px;
+    display: flex;
+}
+
+.publication .card .card-body .header .fa-calendar {
+    margin-right: 15px;
+}
+
+.publication .card .card-body .header .fa-trash-o {
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+.publication .card .card-body .header .fa-trash-o:hover {
+    transform: scale(1.1);
+    color: #da0037;
+}
+
+.publication .card .card-body .titre {
+    margin-top: -36px;
+
+}
+
+.publication .card .card-body .titre h5 {
+    background-color: #da0037;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.publication .card .card-body .ingredient i {
+    color: #da0037;
+    margin-right: 10px;
+}
+
+.publication .card .card-body .action {
+    margin-top: 10px;
+}
+
+.publication .card .card-body .action .jaime {
+    display: flex;
+}
+
+.publication .card .card-body .action .jaime .btn_jadore {
+    background-color: white;
+    border: 1px solid #da0037;
+    color: #da0037;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+}
+
+.publication .card .card-body .action .jaime .btn_jadore i {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.publication .card .card-body .action .jaime .btn_jadore:focus {
+    box-shadow: none;
+}
+
+.publication .card .card-body .action .jaime .btn_voir {
+    background-color: #da0037;
+    color: white;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.publication .card .card-body .action .jaime .btn_voir:focus {
+    box-shadow: none !important;
+}
+
+.publication .card .card-body .action .btn_commentaire {
+    background-color: #da0037;
+    color: white;
+    border-radius: 8px;
+
+}
+
+.publication .card .card-body .action .btn_commentaire:focus {
+    box-shadow: none !important;
+}
+
+.publication .card .card-body .action .btn_commentaire i {
+    margin-left: 5px;
+}
+
+.liste_jaime {
+    display: flex;
+    margin-top: 10px;
+}
+
+.liste_jaime i {
+    background-color: rgb(214, 214, 214);
+    padding: 8px;
+    color: #da0037;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.liste_jaime .image_user {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
+
+.liste_jaime .image_user img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #da0037;
+}
+
+.liste_jaime h5 {
+    margin-top: 11px;
+    margin-left: 10px;
+}
+
+.btn_fermer {
+    background-color: #da0037 !important;
+    color: #e5e5e5 !important;
+    border-radius: 0 !important;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.btn_fermer:focus {
+    box-shadow: none !important;
+}
+
+.titre_jaime {
+    background-color: #da0037;
+    padding-top: 5px;
+    padding-bottom: 2px !important;
+}
+
+.titre_jaime h4 {
+    color: white;
+}
+
+.scroll_jaime {
+    height: 400px;
+}
+
+
+@media (min-width: 320px) and (max-width: 479.98px) {
+    .User .bloc_user .user {
+        width: 50%;
+
+    }
+    .User .bloc_user .logo {
+        width: 50%;
+    }
+    .User .bloc_user .user .image_user {
+        width: 105px;
+        height: 100px;
+    }
+    
+    .User .bloc_user .user h5 {
+        margin-top: 20px;
+        color: white;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .User .bloc_user .user h6 {
+        margin-top: 15px;
+        color: white;
+        font-size: 12px;
+    }
+
+    .User .bloc_user .logo .logo_food {
+        width: 400px;
+        margin-top: 20px;
+    }
+    
+    .User .bloc_user .logo .logo_food img {
+        width: 100%;
+    }
+    
+    .User .bloc_user .logo .retour {
+        display: flex;
+        text-decoration: none !important;
+        margin-top: 20px;
+    }
+    
+    .User .bloc_user .logo .retour i {
+        border-radius: 50%;
+        color: #da0037;
+        margin-right: 5px;
+        font-size: 15px;
+    }
+    
+    .User .bloc_user .logo .retour h6 {
+        color: gray;
+        font-size: 12px;
+    }
+}
