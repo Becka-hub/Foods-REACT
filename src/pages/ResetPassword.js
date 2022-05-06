@@ -58,7 +58,7 @@ const ResetPassword = () => {
           <div className='d-flex justify-content-center'>
             <Link to="/" className='retour'>
               <i className='fa fa-arrow-circle-left'></i>
-              <h5>Accueil</h5>
+              <h6>Accueil</h6>
             </Link>
           </div>
         </div>

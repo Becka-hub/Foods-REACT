@@ -130,6 +130,7 @@
 
 .publication .card .card-body .titre {
     margin-top: -36px;
+    margin-bottom: 10px;
 
 }
 
@@ -143,10 +144,51 @@
     text-transform: uppercase;
     border-radius: 2px;
 }
-
+.publication .card .card-body .description p{
+    margin-top: -8px!important;
+    text-align: justify;
+ }
+ .publication .card .card-body .description p a{
+    color:#da0037!important;
+    font-weight: 600;
+    text-decoration: none!important;
+  }
+  .publication .card .card-body .description ul{
+    margin-top: -10px!important;
+  }
+  .publication .card .card-body .description ol{
+    margin-top: -10px!important;
+  }
+  .publication .card .card-body .ingredient h6{
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: rgb(8, 8, 34);
+  }
+  .publication .card .card-body .ingredient p{
+    margin-top: -5px;
+  }
+  .publication .card .card-body .ingredient p a{
+    color:#da0037!important;
+    font-weight: 600;
+    text-decoration: none!important;
+  }
 .publication .card .card-body .ingredient i {
     color: #da0037;
     margin-right: 10px;
+}
+.publication .card .card-body .ingredient ul{
+    margin-top: -10px!important;
+}
+.publication .card .card-body .ingredient ul li::marker{
+    color: #da0037!important;
+    font-weight: 700;
+}
+.publication .card .card-body .ingredient ol{
+    margin-top: -10px!important;
+}
+.publication .card .card-body .ingredient ol li::marker{
+    color: #da0037!important;
+    font-weight: 700;
 }
 
 .publication .card .card-body .action {

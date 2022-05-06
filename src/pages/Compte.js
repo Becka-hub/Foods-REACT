@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Modal } from 'react-bootstrap';
 import '../css/compte.css';
 import { Link } from 'react-router-dom';
@@ -10,6 +10,10 @@ import { toast } from 'react-toastify';
 import { useSelector, useDispatch } from 'react-redux';
 import { AjouteJaime, SuprimerJaime } from '../Api/JaimeRequest';
 import { ajouteDataJaime, suprimerDataJaime } from '../redux/actions/actionDataJaime';
+import { EditorState, convertToRaw } from 'draft-js';
+import { Editor } from 'react-draft-wysiwyg';
+import draftToHtml from 'draftjs-to-html';
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
 const Compte = () => {
   // LES STATES 
@@ -23,11 +27,24 @@ const Compte = () => {
   const [dataFood, setDataFood] = useState([]);
   const [dataJaime, setDataJaime] = useState([]);
   const [JaimeBase, setJaimeBase] = useState([]);
+  let editorDescription = EditorState.createEmpty();
+  let editorIngredient = EditorState.createEmpty();
   const [category, setCategory] = useState("");
   const [nom, setNom] = useState("");
-  const [description, setDescription] = useState("");
-  const [ingredient, setIngredient] = useState("");
+  const [description, setDescription] = useState(editorDescription);
+  const [ingredient, setIngredient] = useState(editorIngredient);
 
+
+  const onEditorStateDescription = (editorState) => {
+    setDescription(editorState);
+  }
+
+  const onEditorStateIngredient = (editorState) => {
+    setIngredient(editorState);
+  }
+
+  const dataDescription = useRef();
+  const dataIngredient = useRef();
 
 
   const user = useSelector((state) => state.user);
@@ -76,6 +93,10 @@ const Compte = () => {
     });
   }, []);
 
+
+ // REQUETTE JAIME
+
+
   useEffect(() => {
     FoodJaime();
   }, [dataFood]);
@@ -88,13 +109,13 @@ const Compte = () => {
     });
   }
 
-  useEffect(() => {
-    foods();
-  }, []);
-
 
 
   // AFFICHAGE PUBLICATION DES USER
+
+  useEffect(() => {
+    foods();
+  }, []);
 
   const foods = () => {
     setLoader(true);
@@ -128,8 +149,9 @@ const Compte = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    e.persist();
     setLoading(true);
-    const data = { libelle: nom, description: description, photo: photo, idUser: user.id, idCategory: category, ingredient: ingredient };
+    const data = { libelle: nom, description: dataDescription.current?.value, photo: photo, idUser: user.id, idCategory: category, ingredient: dataIngredient.current?.value };
     AjouteFood(data).then(function (response) {
       if (response.data.title === "success") {
         toast.success(response.data.message);
@@ -142,8 +164,8 @@ const Compte = () => {
       setNom("");
       setPhoto("");
       setCategory("");
-      setDescription("");
-      setIngredient("");
+      setDescription(editorDescription);
+      setIngredient(editorIngredient);
       setIcon(true);
       setLoading(false);
     });
@@ -183,7 +205,7 @@ const Compte = () => {
   const ingredients = (ingredients) => {
     return (
       ingredients.map((ingredient, index) =>
-        <p className='card-text' key={index}>{ingredient.libelle}</p>
+        <div className='card-text' key={index} dangerouslySetInnerHTML={{ __html: ingredient.libelle }}/>
       ));
   }
 
@@ -306,13 +328,28 @@ const Compte = () => {
                       <div className='col-12 col-sm-6 col-md-6 col-lg-6'>
                         <div className="mb-3">
                           <label className="form-label">Descriptions et préparations</label>
-                          <textarea placeholder='Déscriptions et préparations...' value={description} onChange={(e) => setDescription(e.target.value)} className='form-control' rows={3} required>
-                          </textarea>
+                          <Editor
+                            editorState={description}
+                            toolbarClassName="toolbarClassName"
+                            wrapperClassName="wrapperClassName"
+                            editorClassName="editorClassName"
+                            placeholder="Descriptions et préparations..."
+                            onEditorStateChange={onEditorStateDescription}
+                          />
+                          <textarea style={{ display: 'none' }} disabled ref={dataDescription} required value={draftToHtml(convertToRaw(description.getCurrentContent()))} />
                         </div>
                         <div className="mb-3">
                           <label className="form-label">Ingrédients utilisés</label>
-                          <textarea placeholder='Ingredients utilisés...' value={ingredient} onChange={(e) => setIngredient(e.target.value)} className='form-control' rows={3} required>
-                          </textarea>
+                          <Editor
+                            editorState={ingredient}
+                            toolbarClassName="toolbarClassName"
+                            wrapperClassName="wrapperClassName"
+                            editorClassName="editorClassName"
+                            placeholder="Ingrédient utilisés..."
+                            onEditorStateChange={onEditorStateIngredient}
+                          />
+                          <textarea style={{ display: 'none' }} disabled ref={dataIngredient} required value={draftToHtml(convertToRaw(ingredient.getCurrentContent()))} />
+
                         </div>
                       </div>
                     </div>
@@ -340,12 +377,11 @@ const Compte = () => {
                               <div className='d-flex justify-content-center titre'>
                                 <h5 className="">{food.libelle}</h5>
                               </div>
-                              <div className='description'>
-                                <p>{food.description}</p>
-                              </div>
+                              <div className='description' dangerouslySetInnerHTML={{ __html: food.description }}/>
                               <div className='ingredient'>
-                                <h5><i className='fa fa-cutlery'></i>Ingredients</h5>
+                                <h6><i className='fa fa-cutlery'></i>Ingredients</h6>
                                 {ingredients(food.ingredients)}
+
                               </div>
                               <div className='action d-flex justify-content-between'>
                                 <div className='jaime'>
@@ -375,7 +411,7 @@ const Compte = () => {
           <div className='overflow-scroll scroll_jaime'>
             {dataJaime?.length === 0 ?
               <h6 className='text-center mt-2'>Pas encore des jaimes...</h6>
-              : dataJaime?.map((jaime,index) => {
+              : dataJaime?.map((jaime, index) => {
                 return (
                   <div className='liste_jaime' key={index}>
                     <i className='fa fa-heart'></i>

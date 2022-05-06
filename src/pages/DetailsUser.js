@@ -108,7 +108,7 @@ const DetailsUser = () => {
     const ingredients = (ingredients) => {
         return (
             ingredients.map((ingredient, index) =>
-                <p className='card-text' key={index}>{ingredient.libelle}</p>
+            <div className='card-text' key={index} dangerouslySetInnerHTML={{ __html: ingredient.libelle }}/>
             ));
     }
 
@@ -215,11 +215,9 @@ const DetailsUser = () => {
                                                     <div className='d-flex justify-content-center titre'>
                                                         <h5 className="">{food.libelle}</h5>
                                                     </div>
-                                                    <div className='description'>
-                                                        <p>{food.description}</p>
-                                                    </div>
+                                                    <div className='description' dangerouslySetInnerHTML={{ __html: food.description }}/>
                                                     <div className='ingredient'>
-                                                        <h5><i className='fa fa-cutlery'></i>Ingredients</h5>
+                                                        <h6><i className='fa fa-cutlery'></i>Ingredients</h6>
                                                         {ingredients(food.ingredients)}
                                                     </div>
                                                     <div className='action d-flex justify-content-between'>

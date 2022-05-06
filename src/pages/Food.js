@@ -60,7 +60,7 @@ const Food = () => {
                           </div>
                           <div className="card-body">
                             <h5 className="text-center">{food.libelle}</h5>
-                            <p className="card-text">{food.description}</p>
+                            <div className="card-text" dangerouslySetInnerHTML={{ __html: food.description }}/>
                             <button className='btn w-100' onClick={() => handleShow(food.id)}>Détails</button>
                           </div>
                         </div>
@@ -88,13 +88,11 @@ const Food = () => {
               <div className='details_image'>
                 <img src={BASE_URL + food.photo_url} alt="sakafo" />
               </div>
-              <div className='details_description'>
-                <p>{food.description}</p>
-              </div>
+              <div className='details_description' dangerouslySetInnerHTML={{ __html: food.description }}/>
               <div className='details_ingredient'>
-                <h5><i className='fa fa-cutlery'></i> Ingredients</h5>
+                <h6><i className='fa fa-cutlery'></i> Ingredients</h6>
                 {food.ingredients?.map((ingre, index) =>
-                  <p>{ingre.libelle}</p>
+                  <div  key={index} dangerouslySetInnerHTML={{ __html: ingre.libelle }}/>
                 )}
               </div>
               <div className='d-flex justify-content-center'>

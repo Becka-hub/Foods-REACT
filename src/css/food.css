@@ -67,11 +67,11 @@ margin-top: 15px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
-.Food .bloc_produit .card p{
+.Food .bloc_produit .card .card-text{
     width:100%;
     overflow:hidden;
     line-height: 2rem;
-    max-height: 8rem;
+    max-height: 4rem;
     -webkit-box-orient: vertical;
     display: block;
     display: -webkit-box;
@@ -79,12 +79,18 @@ margin-top: 15px;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
 }
+.Food .bloc_produit .card .card-text p a{
+    color:black!important;
+    font-weight: 600;
+    text-decoration: none!important;
+}
 .Food .bloc_produit .card button{
     background-color:white ;
     color: #da0037;
     transition: 0.5s ease;
     border-radius: 0!important;
     border: 1px solid #da0037;
+    margin-top: 10px;
 }
 .Food .bloc_produit .card button:hover{
     background-color:#da0037;
@@ -122,6 +128,7 @@ margin-top: 15px;
 .modal_details .details_image{
     width: 100%;
     height: 300px;
+    margin-bottom: 20px;
 }
 .modal_details .details_image img{
     width: 100%;
@@ -129,13 +136,51 @@ margin-top: 15px;
     object-fit: cover;
 }
 .modal_details  .details_description p{
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: -8px!important;
+    font-size: 17px;
+    text-align: justify;
 }
-
+.modal_details  .details_description p a{
+    color:black!important;
+    font-weight: 600;
+    text-decoration: none!important;
+}
+.modal_details  .details_description ul{
+    margin-top: -10px!important;
+}
+.modal_details  .details_description ol{
+    margin-top: -10px!important;
+}
+.modal_details .details_ingredient h6{
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: rgb(8, 8, 34);
+}
+.modal_details .details_ingredient p{
+    margin-top: -5px;
+}
+.modal_details .details_ingredient a{
+    color:#da0037!important;
+    font-weight: 600;
+    text-decoration: none!important;
+}
 .modal_details .details_ingredient i{
     color: #da0037;
     font-size: 18px;
+}
+.modal_details .details_ingredient ul{
+    margin-top: -10px!important;
+}
+.modal_details .details_ingredient ul li::marker{
+    color: #da0037!important;
+    font-weight: 700;
+}
+.modal_details .details_ingredient ol{
+    margin-top: -10px!important;
+}
+.modal_details .details_ingredient ol li::marker{
+    color: #da0037!important;
+    font-weight: 700;
 }
 .modal_details button{
 background-color: #da0037;

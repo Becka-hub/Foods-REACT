@@ -41,11 +41,11 @@
 .Reset .retour i{
     margin-top: 6px;
     margin-right: 10px;
-    font-size: 25px;
+    font-size: 20px;
     color: #da0037;
     cursor: pointer;
 }
-.Reset .retour h5{
+.Reset .retour h6{
     margin-top: 5px;
     color: rgb(71, 71, 71);
     cursor: pointer;

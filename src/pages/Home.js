@@ -191,7 +191,7 @@ const Home = () => {
   const ingredients = (ingredients) => {
     return (
       ingredients.map((ingredient, index) =>
-        <p className='card-text' key={index}>{ingredient.libelle}</p>
+      <div className='card-text' key={index} dangerouslySetInnerHTML={{ __html: ingredient.libelle }}/>
       ));
   }
 
@@ -344,9 +344,7 @@ const Home = () => {
                               <div className='food_name'>
                                 <h5 className="name">{food.libelle}</h5>
                               </div>
-                              <div className='food_description'>
-                                <p className="card-text">{food.description}</p>
-                              </div>
+                              <div className='food_description' dangerouslySetInnerHTML={{ __html: food.description }}/>
                               <div className='food_ingredient'>
                                 <h6><i className='fa fa-cutlery'></i>Ingredients</h6>
                                 {ingredients(food.ingredients)}

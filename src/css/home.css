@@ -270,6 +270,7 @@
     padding-right: 20px;
     padding-top: 5px;
     background-color: #da0037;
+    
 }
 
 #Food .bloc_food .food_public .card .food_name h5 {
@@ -278,15 +279,26 @@
 }
 
 #Food .bloc_food .food_public .card .food_description {
-    margin-top: 22px;
+    margin-top: 30px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 #Food .bloc_food .food_public .card .food_description p {
     text-align: justify;
+    margin-top: -8px!important;
 }
-
+#Food .bloc_food .food_public .card .food_description p a{
+    color:#da0037!important;
+    font-weight: 600;
+    text-decoration: none!important;
+}
+#Food .bloc_food .food_public .card .food_description ul{
+    margin-top: -10px!important;
+}
+#Food .bloc_food .food_public .card .food_description ol{
+    margin-top: -10px!important;
+}
 #Food .bloc_food .food_public .card .food_ingredient {
     margin-top: 5px;
     margin-left: 10px;
@@ -295,6 +307,7 @@
 #Food .bloc_food .food_public .card .food_ingredient h6 {
     font-weight: 700;
     color: rgb(8, 8, 34);
+    margin-bottom: 12px;
 }
 
 #Food .bloc_food .food_public .card .food_ingredient h6 i {
@@ -305,8 +318,26 @@
 
 #Food .bloc_food .food_public .card .food_ingredient p {
     text-align: justify;
+    margin-top: -5px;
 }
-
+#Food .bloc_food .food_public .card .food_ingredient a{
+    color:#da0037!important;
+    font-weight: 600;
+    text-decoration: none!important;
+}
+#Food .bloc_food .food_public .card .food_ingredient ul{
+    margin-top: -10px!important;
+}
+#Food .bloc_food .food_public .card .food_ingredient ul li::marker{
+    color: #da0037!important;
+    font-weight: 700;
+}
+#Food .bloc_food .food_public .card .food_ingredient ol{
+    margin-top: -10px!important;
+}#Food .bloc_food .food_public .card .food_ingredient ol li::marker{
+    color: #da0037!important;
+    font-weight: 700;
+}
 #Food .bloc_food .food_public .card .action {
     margin: 10px;
 }
@@ -561,6 +592,7 @@
 }
 
 @media (min-width: 480px) and (max-width: 575.98px) {
+
     .liste_jaime i {
         background-color: rgb(214, 214, 214);
         padding: 5px;
