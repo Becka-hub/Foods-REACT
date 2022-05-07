@@ -78,6 +78,16 @@ margin-top: 15px;
     overflow: hidden !important;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
+    margin-top: 10px;
+}
+.Food .bloc_produit .card .card-text p{
+    margin-top: -8px;
+}
+.Food .bloc_produit .card .card-text p ul{
+    margin-top: -8px;
+}
+.Food .bloc_produit .card .card-text p ol{
+    margin-top: -8px;
 }
 .Food .bloc_produit .card .card-text p a{
     color:black!important;
