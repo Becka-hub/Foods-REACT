@@ -24,7 +24,7 @@
   padding-bottom: 3px;
   padding-top: 3px;
   backdrop-filter:blur(4px);
-  background-color: rgba(121, 121, 121, 0.185);
+  background-color: rgba(121, 121, 121, 0.336);
   height: 80px;
   
 }
@@ -87,6 +87,12 @@ margin-top: 15px;
     margin-top: -8px;
 }
 .Food .bloc_produit .card .card-text p ol{
+    margin-top: -8px;
+}
+.Food .bloc_produit .card .card-text ul{
+    margin-top: -8px;
+}
+.Food .bloc_produit .card .card-text ol{
     margin-top: -8px;
 }
 .Food .bloc_produit .card .card-text p a{
